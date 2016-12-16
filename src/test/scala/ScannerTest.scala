@@ -141,7 +141,7 @@ class ScannerTest extends FunSuite {
         val obs2 = conn.getScannerSubscription( scanner )
         obs2 subscribe (
             d => {
-                println(s"[10-50] ${d.rank} ${d.contractDetails.m_summary.m_symbol}") 
+//                println(s"[10-50] ${d.rank} ${d.contractDetails.m_summary.m_symbol}") 
                 // distance: ${d.distance} benchmark: ${d.benchmark} projection: ${d.projection}, legsStr: ${d.legsStr}" )
                 count += 1
             },
@@ -154,7 +154,7 @@ class ScannerTest extends FunSuite {
         val obs3 = conn.getScannerSubscription( scanner )
         obs3 subscribe (
             d => {
-                println(s"[50-100] ${d.rank} ${d.contractDetails.m_summary.m_symbol}")
+//                println(s"[50-100] ${d.rank} ${d.contractDetails.m_summary.m_symbol}")
                 // distance: ${d.distance} benchmark: ${d.benchmark} projection: ${d.projection}, legsStr: ${d.legsStr}" )
                 count += 1
             },
@@ -167,7 +167,7 @@ class ScannerTest extends FunSuite {
         val obs4 = conn.getScannerSubscription( scanner )
         obs4.subscribe (
             d => {
-                println(s"[100-200] ${d.rank} ${d.contractDetails.m_summary.m_symbol}")
+//                println(s"[100-200] ${d.rank} ${d.contractDetails.m_summary.m_symbol}")
                 // distance: ${d.distance} benchmark: ${d.benchmark} projection: ${d.projection}, legsStr: ${d.legsStr}" )
                 count += 1
             },

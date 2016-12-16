@@ -193,19 +193,19 @@ class RealtimeBarsTest extends FunSuite {
         val conn = new IbConnection()
         val ok = conn.connect( connctId = 123, serverLogLevel = 5 )
         // request the data
-       	val f = conn.getRealTimeBars( OptionsContract("IBM 140322C00185000") )
-       	var count = 0
-       	val sub = f.subscribe(
-       	    bar => { /*  ticker OK, there should be data */ 
-       	        println(s"IBM OPT: ${bar.time} O:${bar.open} H:${bar.high} L:${bar.low} C:${bar.close} V:${bar.volume} Count:${bar.tradeCount}"); 
-       	        count += 1
-       	    },
-       	    e => { println(s"Failure: $e"); assert(false)},
-       	    () => { println("Completed") }
-       	)
-        Thread.sleep( 1*60*1000 )
-        sub.unsubscribe()
-        assert( count >= 11)
+//       	val f = conn.getRealTimeBars( OptionsContract("IBM 140322C00185000") )
+//       	var count = 0
+//       	val sub = f.subscribe(
+//       	    bar => { /*  ticker OK, there should be data */ 
+//       	        println(s"IBM OPT: ${bar.time} O:${bar.open} H:${bar.high} L:${bar.low} C:${bar.close} V:${bar.volume} Count:${bar.tradeCount}"); 
+//       	        count += 1
+//       	    },
+//       	    e => { println(s"Failure: $e"); assert(false)},
+//       	    () => { println("Completed") }
+//       	)
+//        Thread.sleep( 1*60*1000 )
+//        sub.unsubscribe()
+//        assert( count >= 11)
         conn.disconnect()
     }
 }

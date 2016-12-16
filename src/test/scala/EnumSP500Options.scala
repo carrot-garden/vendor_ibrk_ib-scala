@@ -58,7 +58,7 @@ class EnumSP500Options extends FunSuite {
     
     def pause( secs: Int = 30 ) = { println(s"Pause ... $secs seconds") ; Thread.sleep( secs * 1000 ) }
     
-    def toString( c: Contract ): String = s"${c.m_symbol} ${c.m_expiry} ${c.m_strike} ${c.m_right}" 
+//    def toString( c: Contract ): String = s"${c.m_symbol} ${c.m_expiry} ${c.m_strike} ${c.m_right}" 
 
     test("Test 1: Get options chain for the SP 500 ( Calls only )"){
         println("\n==== Test 1: Get options chain for the SP 500 ( Calls only )\n")
@@ -100,7 +100,7 @@ class EnumSP500Options extends FunSuite {
                         // println( if ( l > 0 ) s"${lcd.data.asInstanceOf[ContractDetailsDataList].contractDetails(0).m_summary.m_symbol}: Option Count: $l" else "" )
                         if ( lCDs.length > 0 ) {
                             // add it
-                            options += ((lCDs(0).m_summary.m_symbol, lCDs ))
+//                            options += ((lCDs(0).m_summary.m_symbol, lCDs ))
                         }    
                     }
                     result = Some(true)

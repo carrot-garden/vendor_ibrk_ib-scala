@@ -101,8 +101,8 @@ class MarketDataTickTest extends FunSuite {
         var failed = false ;
         // request the data
         val optCont = new Contract() 
-        optCont.m_conId = 142388354
-        optCont.m_exchange = "CBOE"
+//        optCont.m_conId = 142388354
+//        optCont.m_exchange = "CBOE"
         val f = conn.getMarketData( optCont )
         val sub = f.subscribe(
             tick => { println( tick )},

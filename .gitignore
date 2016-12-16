@@ -26,7 +26,7 @@ project/target/
 .classpath
 .project
 # eclipse or sbt ?
-.cache
+.cache*
 .idea
 .idea_modules
 *.swp
@@ -39,3 +39,4 @@ tags
 # local stuff
 src/main/scala/test/
 src/main/scala/newStuff/
+/bin/
