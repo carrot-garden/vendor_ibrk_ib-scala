@@ -52,9 +52,9 @@ class OrderDetailsExt(val ood: OpenOrderDetails) {
     s ++= s"Warning Text: ${ood.orderState.warningText}\n"
     s ++= s"Commission: ${ood.orderState.commission}\n" // Shows the commission amount on the order.
     s ++= s"Commission Currency: ${ood.orderState.commissionCurrency}\n" // Shows the currency of the commission value.
-    s ++= s"Equity w/Loan: ${ood.orderState.equityWithLoan}\n" // Shows the impact the order would have on your equity with loan value.
-    s ++= s"Init Margin: ${ood.orderState.initMargin}\n" // Shows the impact the order would have on your initial margin.
-    s ++= s"Maint Margin: ${ood.orderState.maintMargin}\n" // Shows the impact the order would have on your maintenance margin.
+//    s ++= s"Equity w/Loan: ${ood.orderState.equityWithLoan}\n" // Shows the impact the order would have on your equity with loan value.
+//    s ++= s"Init Margin: ${ood.orderState.initMargin}\n" // Shows the impact the order would have on your initial margin.
+//    s ++= s"Maint Margin: ${ood.orderState.maintMargin}\n" // Shows the impact the order would have on your maintenance margin.
     s ++= s"Max Commission: ${ood.orderState.maxCommission}\n" // Used in conjunction with the minCommission field, this defines the highest end of the possible range into which the actual order commission will fall.
     s ++= s"Min Commission: ${ood.orderState.minCommission}\n" // Used in conjunction with the maxCommission field, this defines the lowest end of the possible range into which the actual order commission will fall.
     s.toString

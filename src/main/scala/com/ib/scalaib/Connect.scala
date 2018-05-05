@@ -71,6 +71,34 @@ class IbConnection extends EWrapper
   def verifyCompleted(x$1: Boolean, x$2: String): Unit = ???
   def verifyMessageAPI(x$1: String): Unit = ???
 
+  def familyCodes(x$1: Array[com.ib.client.FamilyCode]): Unit = ???
+  def headTimestamp(x$1: Int,x$2: String): Unit = ???
+  def histogramData(x$1: Int,x$2: java.util.List[com.ib.client.HistogramEntry]): Unit = ???
+  def historicalData(x$1: Int,x$2: com.ib.client.Bar): Unit = ???
+  def historicalDataEnd(x$1: Int,x$2: String,x$3: String): Unit = ???
+  def historicalDataUpdate(x$1: Int,x$2: com.ib.client.Bar): Unit = ???
+  def historicalNews(x$1: Int,x$2: String,x$3: String,x$4: String,x$5: String): Unit = ???
+  def historicalNewsEnd(x$1: Int,x$2: Boolean): Unit = ???
+  def historicalTicks(x$1: Int,x$2: java.util.List[com.ib.client.HistoricalTick],x$3: Boolean): Unit = ???
+  def historicalTicksBidAsk(x$1: Int,x$2: java.util.List[com.ib.client.HistoricalTickBidAsk],x$3: Boolean): Unit = ???
+  def historicalTicksLast(x$1: Int,x$2: java.util.List[com.ib.client.HistoricalTickLast],x$3: Boolean): Unit = ???
+  def marketRule(x$1: Int,x$2: Array[com.ib.client.PriceIncrement]): Unit = ???
+  def mktDepthExchanges(x$1: Array[com.ib.client.DepthMktDataDescription]): Unit = ???
+  def newsArticle(x$1: Int,x$2: Int,x$3: String): Unit = ???
+  def newsProviders(x$1: Array[com.ib.client.NewsProvider]): Unit = ???
+  def orderStatus(x$1: Int,x$2: String,x$3: Double,x$4: Double,x$5: Double,x$6: Int,x$7: Int,x$8: Double,x$9: Int,x$10: String,x$11: Double): Unit = ???
+  def pnl(x$1: Int,x$2: Double,x$3: Double,x$4: Double): Unit = ???
+  def pnlSingle(x$1: Int,x$2: Int,x$3: Double,x$4: Double,x$5: Double,x$6: Double): Unit = ???
+  def rerouteMktDataReq(x$1: Int,x$2: Int,x$3: String): Unit = ???
+  def rerouteMktDepthReq(x$1: Int,x$2: Int,x$3: String): Unit = ???
+  def smartComponents(x$1: Int,x$2: java.util.Map[Integer,java.util.Map.Entry[String,Character]]): Unit = ???
+  def symbolSamples(x$1: Int,x$2: Array[com.ib.client.ContractDescription]): Unit = ???
+  def tickByTickAllLast(x$1: Int,x$2: Int,x$3: Long,x$4: Double,x$5: Int,x$6: com.ib.client.TickAttr,x$7: String,x$8: String): Unit = ???
+  def tickByTickBidAsk(x$1: Int,x$2: Long,x$3: Double,x$4: Double,x$5: Int,x$6: Int,x$7: com.ib.client.TickAttr): Unit = ???
+  def tickByTickMidPoint(x$1: Int,x$2: Long,x$3: Double): Unit = ???
+  def tickNews(x$1: Int,x$2: Long,x$3: String,x$4: String,x$5: String,x$6: String): Unit = ???
+  def tickPrice(x$1: Int,x$2: Int,x$3: Double,x$4: com.ib.client.TickAttr): Unit = ???
+  def tickReqParams(x$1: Int,x$2: Double,x$3: String,x$4: Int): Unit = ???  
   def securityDefinitionOptionalParameterEnd(x$1: Int): Unit = ???
 
   def securityDefinitionOptionalParameter(x$1: Int, x$2: String, x$3: Int, x$4: String, x$5: String,
